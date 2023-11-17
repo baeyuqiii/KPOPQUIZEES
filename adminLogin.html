@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Page</title>
+    <style>
+       body {
+      font-family: Arial, sans-serif;
+      background-image:url('bt213.jpg');
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .login-container {
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 14px 16px rgba(0, 0, 0, 0.1);
+      text-align: left;
+      max-width: 300px;
+      width: 100%;
+    }
+
+    .login-container h1 {
+      color: deeppink;
+      margin-bottom: 20px;
+    }
+
+    .login-form label {
+      display: block;
+      margin-bottom: 5px;
+      font-family: times;
+    }
+
+    .login-form input {
+      width: 100%;
+      padding: 10px;
+      margin: 5px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+
+    .login-form input[type="submit"] {
+      background-color: maroon;
+      color: lightgoldenrodyellow;
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .login-form input[type="submit"]:hover {
+      background-color: maroon;
+    }
+  </style>
+</head>
+<body>
+
+<div class="login-container">
+  <h1 style="font-family:sans-serif ;color:maroon;text-align:center;">LOGIN</h1>
+  <form action="home.txt.php" method="POST" class="login-form">
+    <label for="email">Email</label>
+    <input type="text" id="email" name="email" required> 
+
+    <label for="password">Password</label>
+    <input type="password" id="password" name="password" required>
+
+    <input type="submit" value="Login">
+  </form>
+</div>
+
+</body>
+</html>
